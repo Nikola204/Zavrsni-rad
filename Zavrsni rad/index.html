@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja i iznajmljivanje automobila</title>
+
+    <!-- cds sa swipera -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- header pocinje -->
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#home" class="logo"> Auto<span>Guru</span> </a>
+
+        <nav class="navbar">
+            <a href="#home" >Početna</a>
+            <a href="#vehicles" >Najtraženija vozila</a>
+            <a href="#services" >Usluge</a>
+            <a href="#featured" >Asortiman vozila</a>
+            <a href="#reviews" >Ocjene</a>
+            <a href="#contact" >Kontakti</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">Prijava</button>
+            <i class="far far-user"></i>
+        </div>
+    </header>
+    <!-- header zavrsava -->
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+
+        <span class= "fas fa-times" id="close-login-form"></span>
+
+        <form action="">
+            <h3>Prijava</h3>
+            <input type="text" placeholder="email" class="box">
+            <input type="password" placeholder="lozinka" class="box">
+            <p>Zaboravili ste lozinku? <a href="#">Kliknite ovdje</a></p>
+            <input type="submit" value="Prijava" class="btn">
+            <p>ili se prijavite sa</p>
+            <div class="buttons">
+                <a href="https://www.google.com/" class="btn">Google</a>
+                <a href="https://www.facebook.com/" class="btn">Facebook</a>
+            </div>
+            <p>Nemate račun? <a href="#">Kreirajte ga</a></p>
+        </form>
+
+    </div>
+
+
+<!-- home section start -->
+
+<section class="home" id="home">
+
+    <h1>Vozila po mjeri</h1>                            
+    <img src="slike/Home/home picture.jpg" alt="">                    
+    <a href="#vehicles" class="btn">Najtraženija vozila</a>                                             
+</section>
+
+<!-- home section ends -->
+
+<!-- icon section start -->
+
+<seciton class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>60548</h3>
+            <p>Iznajmljenih vozila</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>4770</h3>
+            <p>Prodanih vozila</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3>590+</h3>
+            <p>Sretnih korisnika</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>890+</h3>
+            <p>Novih vozila</p>
+        </div>
+    </div>
+</seciton>
+
+<!-- icon section ends -->
+
+<!-- vehicles seciton starts -->
+
+<section class="vehicles" id="vehicles">
+
+    <h1 class="heading"> Top <span>7</span></h1>
+
+    <div class="swiper vehicles-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                
+                <div class="content">
+                    <img src="slike/Auta/mercedes1.jpg" alt="">
+                    <h3>GLE 450 d 4M</h3>
+                    <div class="price"> <span>cijena: </span> 267.846 KM </div>
+                    <p>
+                        novo vozilo
+                        <span class="fas fa-circle"></span> automatik
+                        <span class="fas fa-circle"></span> dizel
+                    </p>
+                    <a href="#" class="btn">Kupi</a>
+                    <a href="#" class="btn rent-btn" data-modal="modal-11">Iznajmi</a>   
+                <div class="modal-container" id="modal-11">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div> 
+            </div>     
+        </div>
+
+        <div class="swiper-slide box">
+                
+            <div class="content">
+                <img src="slike/Auta/mercedes2.jpg" alt="">
+                <h3>GLE 450 d 4M</h3>
+                <div class="price"> <span>cijena: </span> 267.846 KM </div>
+                <p>
+                    novo vozilo
+                    <span class="fas fa-circle"></span> automatik
+                    <span class="fas fa-circle"></span> dizel
+                </p>
+                <a href="#" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-12">Iznajmi</a>   
+            <div class="modal-container" id="modal-12">
+                <div class="modal">
+                    <button class="close-modal">&times;</button>
+                    <h2>Iznajmi vozilo</h2>
+                    <form class="rent-form">
+                        <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                        <input type="date" class="start-date" required>
+                        <input type="date" class="end-date" required>
+                        <button type="submit" class="btn">Potvrdi</button>
+                    </form>
+                </div>
+            </div> 
+        </div>     
+    </div>
+
+        <div class="swiper-slide box">
+                
+            <div class="content">
+                <img src="slike/Auta/mercedes3.jpg" alt="">
+                <h3>GLE 450 d 4M</h3>
+                <div class="price"> <span>cijena: </span> 267.846 KM </div>
+                <p>
+                    novo vozilo
+                    <span class="fas fa-circle"></span> automatik
+                    <span class="fas fa-circle"></span> dizel
+                </p>
+                <a href="#" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-13">Iznajmi</a>   
+                <div class="modal-container" id="modal-13">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                    </form>
+                    </div>
+                </div> 
+            </div>     
+        </div>
+
+    <div class="swiper-slide box">
+                
+        <div class="content">
+            <img src="slike/Auta/mercedes4.jpg" alt="">
+            <h3>GLE 450 d 4M</h3>
+            <div class="price"> <span>cijena: </span> 267.846 KM </div>
+            <p>
+                novo vozilo
+                <span class="fas fa-circle"></span> automatik
+                <span class="fas fa-circle"></span> dizel
+            </p>
+            <a href="#" class="btn">Kupi</a>
+            <a href="#" class="btn rent-btn" data-modal="modal-14">Iznajmi</a>   
+            <div class="modal-container" id="modal-14">
+                <div class="modal">
+                <button class="close-modal">&times;</button>
+                <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                </div>
+            </div> 
+        </div>     
+    </div>
+
+<div class="swiper-slide box">
+                
+    <div class="content">
+        <img src="slike/Auta/mercedes5.jpg" alt="">
+        <h3>GLE 450 d 4M</h3>
+        <div class="price"> <span>cijena: </span> 267.846 KM </div>
+        <p>
+            novo vozilo
+            <span class="fas fa-circle"></span> automatik
+            <span class="fas fa-circle"></span> dizel
+        </p>
+        <a href="#" class="btn">Kupi</a>
+        <a href="#" class="btn rent-btn" data-modal="modal-15">Iznajmi</a>   
+    <div class="modal-container" id="modal-15">
+        <div class="modal">
+            <button class="close-modal">&times;</button>
+            <h2>Iznajmi vozilo</h2>
+            <form class="rent-form">
+                <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                <input type="date" class="start-date" required>
+                <input type="date" class="end-date" required>
+                <button type="submit" class="btn">Potvrdi</button>
+            </form>
+        </div>
+    </div> 
+</div>     
+</div>
+
+<div class="swiper-slide box">
+                
+    <div class="content">
+        <img src="slike/Auta/mercedes6.jpg" alt="">
+        <h3>GLE 450 d 4M</h3>
+        <div class="price"> <span>cijena: </span> 267.846 KM </div>
+                        <p>
+                        novo vozilo
+                        <span class="fas fa-circle"></span> automatik
+                        <span class="fas fa-circle"></span> dizel
+                    </p>
+                    <a href="#" class="btn">Kupi</a>
+                    <a href="#" class="btn rent-btn" data-modal="modal-16">Iznajmi</a>   
+                    <div class="modal-container" id="modal-16">
+                        <div class="modal">
+                            <button class="close-modal">&times;</button>
+                            <h2>Iznajmi vozilo</h2>
+                            <form class="rent-form">
+                                <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                                <input type="date" class="start-date" required>
+                                <input type="date" class="end-date" required>
+                                <button type="submit" class="btn">Potvrdi</button>
+                            </form>
+                        </div>
+                    </div> 
+                </div>     
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="content">
+                    <img src="slike/Auta/mercedes7.jpg" alt="">
+                    <h3>GLE 450 d 4M</h3>
+                    <div class="price"> <span>cijena: </span> 267.846 KM </div>
+                    <p>
+                        novo vozilo
+                        <span class="fas fa-circle"></span> automatik
+                        <span class="fas fa-circle"></span> dizel
+                    </p>
+                    <a href="#" class="btn">Kupi</a>
+                    <a href="#" class="btn rent-btn" data-modal="modal-17">Iznajmi</a>   
+                <div class="modal-container" id="modal-17">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div> 
+            </div>     
+        </div>
+    </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+<!-- vehicles seciton ends -->
+<!-- services section start-->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Naše <span>usluge</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>Prodaja auta</h3>
+            <p>Pronađite svoj idealan automobil po konkurentnim cijenama. Kupujte s povjerenjem i uživajte u vožnji uz našu besprijekornu uslugu.</p>
+            <a href="#" class="btn">Pročitajte više</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-alt"></i>
+            <h3>Iznajmljivanje auta</h3>
+            <p>Uživajte u fleksibilnosti i udobnosti naših vozila po konkurentnim cijenama. Rezervirajte svoje putovanje danas i doživite slobodu vožnje bez briga!</p>
+            <a href="#" class="btn">Pročitajte više</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 pomoć</h3>
+            <p> Naša usluga pomoći na cestama stoji vam na raspolaganju 24/7 kako biste osigurali sigurnost i bezbrižnost na putu.
+                Bez obzira jeste li suočeni s problemom poput kvara, gubitka goriva ili potrebe za vučom vozila, naš tim stručnjaka je tu da vam pruži brzu i efikasnu pomoć.</p>
+            <a href="#" class="btn">Pročitajte više</a>
+        </div>
+
+    </div>
+
+</section> 
+
+<!-- services section end-->
+
+
+<!-- featured section end-->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>Ponuda</span> vozila </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-1.jpg" alt="">
+                <h3>Corolla Hatchback</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">54.990 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-1">Iznajmi</a>   
+                <div class="modal-container" id="modal-1">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+            
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-2.jpg" alt="">
+                <h3>Aygo X</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">32.900 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-2">Iznajmi</a>   
+                <div class="modal-container" id="modal-2">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-3.jpg" alt="">
+                <h3>Yaris</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">34.200 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-3">Iznajmi</a>   
+                <div class="modal-container" id="modal-3">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-4.jpg" alt="">
+                <h3>Yaris Cross</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">46.900 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-4">Iznajmi</a>   
+                <div class="modal-container" id="modal-4">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-5.jpg" alt="">
+                <h3>Camry</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">87.400 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-5">Iznajmi</a>   
+                <div class="modal-container" id="modal-5">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-6.jpg" alt="">
+                <h3>Land Cruiser</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">120.500 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-6">Iznajmi</a>   
+                <div class="modal-container" id="modal-6">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-7.jpg" alt="">
+                <h3>PROACE CITY VERSO</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">66.740 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-7">Iznajmi</a>   
+                <div class="modal-container" id="modal-7">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-8.jpg" alt="">
+                <h3>PROACE CITY</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">46.910 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-8">Iznajmi</a>   
+                <div class="modal-container" id="modal-8">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-9.jpg" alt="">
+                <h3>Toyota C-HR</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">59.900 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-9">Iznajmi</a>   
+                <div class="modal-container" id="modal-9">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Auta/exterior-10.jpg" alt="">
+                <h3>Toyota GR Supra</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">129.500 KM</div>
+                <a href="" class="btn">Kupi</a>
+                <a href="#" class="btn rent-btn" data-modal="modal-10">Iznajmi</a>   
+                <div class="modal-container" id="modal-10">
+                    <div class="modal">
+                        <button class="close-modal">&times;</button>
+                        <h2>Iznajmi vozilo</h2>
+                        <form class="rent-form">
+                            <input type="search" class="location" placeholder="Lokacija iznajmljivanja" required>
+                            <input type="date" class="start-date" required>
+                            <input type="date" class="end-date" required>
+                            <button type="submit" class="btn">Potvrdi</button>
+                        </form>
+                    </div>
+                </div>         
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+
+<!-- featured section end-->
+
+<!-- newsletter section start-->
+
+<section class="newsletter">
+
+    <h3>Pretplatite se za najbrže obavijesti</h3>
+    <form action="">
+        <input type="email" placeholder="Unesite vas email" class="box" name="" id="">
+        <input type="submit" class="subscribe" name="" id="">
+    </form>
+</section>
+
+<!-- newsletter section end-->
+
+
+<!-- review section start-->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading">Ocjene <span>korisnika</span></h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/tonka.jpg" alt="">
+                <div class="content">
+                    <p>Super ste, sve pohvale!</p>
+                    <h3>Antonia Pehar</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/mate.jpg" alt="">
+                <div class="content">
+                    <p>Nisu vam nešto auta bolji moj Volkswagen</p>
+                    <h3>Mateo Pehar</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/mirna.jpg" alt="">
+                <div class="content">
+                    <p>Suppppperiška su. Išla sam sa kolegom Josipom na paraglajding u Hrv. Nikakvih problema nismo imali osim što Josip malo mori, al nebitno to.
+                        I da ne zaboravim čak su nam dali i onaj mirisni bor kao poklon što me je podsjetilo na Božić pa sam sad baš sretna.
+                    </p>
+                    <h3>Mirna Mandic</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/sara.jpg" alt="">
+                <div class="content">
+                    <p>Sve pohvale. Auto nas je super slušalo na putu do Austrije. Jedina mana mu je sto Pavo nije dosao u njemu ahhh... Baš je on morao na tu koridu :/ 
+                        Nadam se da će im se putem pokvarit auto!</p>
+                    <h3>Sara Lepan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/tomke.jpg" alt="">
+                <div class="content">
+                    <p>Baš sam nedavno išao s kolegicom Mirnom do Hrv na paraglajding i tu nas je auto super slušalo.
+                        Pa evo znaš mene i moja putovanja tako da sam sad opet iznajmio auto i mogu ti reći stari moj da auto gori.
+                        Tmn je i vatrogasna došla. Srecom nije nitko nastradao. Ide fina tuzba!!
+                    </p>
+                    <h3>Josip Pervan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/pavo.jpg" alt="">
+                <div class="content">
+                <p>NI SLUCAJNO DA NISTE OVJDE RENTALI ILI NE DAO BOG KUPILI AUTO!!!! Ja se taman spremao na koridu s Androm i haj rekoh rentat ćemo auto.
+                        Da skratim priču, auto je stalo na pola puta i evo nas sada u nekoj selendri, msm da se zove Livno...
+                </p>
+                <h3>Pavo Barisic</h3>
+                    <div class="stars">
+                        <!-- <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> -->
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="slike/Korisnici/zika.jpg" alt="">
+                <div class="content">
+                    <a target="_blank"><p>Freaky auta</p></a>
+                    <h3>Mario Prskalo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- review section end-->
+
+<!-- contact section start-->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Kontaktirajte</span> nas </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725.4022259538912!2d17.
+        800563585368327!3d43.343372360017014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b43a5676c4
+        241%3A0xef318058f6679dbb!2sZagreba%C4%8Dka%208%2C%20Mostar%2088000!5e0!3m2!1shr!2sba!4v1720988898836!5m2!1shr!2sba"
+        allowfullscreen="" loading="lazy" ></iframe>
+
+        <form action="">
+            <!-- <h3>get in touch</h3> -->
+            <input type="text" placeholder="Ime" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Broj" class="box">
+            <textarea placeholder="Poruka" class="box" cols="30" rows="10" name="" id=""></textarea>
+            <input type="submit" value="Pošalji" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section end-->
+
+<!-- footer section start-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Lokacija tvrtke</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hrvatska </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Bosna i Hercegovina </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Srbija </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Slovenija </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Crna Gora </a>
+        </div>
+
+        <div class="box">
+            <h3>Linkovi</h3>
+            <a href="#home"><i class="fas fa-arrow-right"></i> Početna </a>
+            <a href="#vehicles"><i class="fas fa-arrow-right"></i> Nova vozila</a>
+            <a href="#services"><i class="fas fa-arrow-right"></i> Usluge </a>
+            <a href="#featured"><i class="fas fa-arrow-right"></i> Auta </a>
+            <a href="#reviews"><i class="fas fa-arrow-right"></i> Ocjene </a>
+            <a href="#contact"><i class="fas fa-arrow-right"></i> Kontakti </a>
+        </div>
+
+        <div class="box">
+            <h3>Linkovi</h3>
+            <a href="#"><i class="fas fa-phone"></i> +387 63 571-961 </a>
+            <a href="#"><i class="fas fa-envelope"></i> nikola.pehar@fsre.sum.ba</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Gradnići 123 </a>
+        </div>
+
+        <div class="box">
+            <h3>Linkovi</h3>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter </a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram </a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin </a>
+            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i> Pinterest </a>
+        </div>
+    </div>
+
+    <div class="credit"> <p>&copy; 2023-2024 Nikola Pehar | All rights reserved</p></div>
+
+</section>
+
+<!-- footer section end-->
+
+<!-- SWIPER-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
